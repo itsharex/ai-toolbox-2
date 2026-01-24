@@ -8,6 +8,7 @@ import { invoke } from '@tauri-apps/api/core';
 import type {
   CodexProvider,
   CodexCommonConfig,
+  CodexLocalConfigInput,
   CodexSettings,
 } from '@/types/codex';
 
@@ -111,4 +112,13 @@ export const saveCodexCommonConfig = async (config: string): Promise<void> => {
  */
 export const reorderCodexProviders = async (ids: string[]): Promise<void> => {
   await invoke('reorder_codex_providers', { ids });
+};
+
+/**
+ * Save local config (provider and/or common) into database
+ */
+export const saveCodexLocalConfig = async (
+  input: CodexLocalConfigInput
+): Promise<void> => {
+  await invoke('save_codex_local_config', { input });
 };
