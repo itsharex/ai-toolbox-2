@@ -211,19 +211,6 @@
   }
 }
 
-.marketplaceToggleWrap {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0 8px;
-  min-height: 32px;
-}
-
-.marketplaceToggleLabel {
-  font-size: 12px;
-  color: var(--color-text-secondary);
-}
-
 .tagList {
   display: flex;
   align-items: center;
@@ -240,26 +227,12 @@
   margin: 12px 0;
 }
 
+.featureAlert {
+  margin-bottom: 16px;
+}
+
 .emptyWrap {
   padding: 20px 0 8px;
-}
-
-.modalFieldRow {
-  display: grid;
-  grid-template-columns: 108px minmax(0, 1fr);
-  gap: 12px;
-  align-items: center;
-}
-
-.modalFieldLabel {
-  display: flex;
-  align-items: center;
-  min-height: 32px;
-  color: var(--color-text-primary);
-}
-
-.modalFieldControl {
-  min-width: 0;
 }
 
 @media (max-width: 1080px) {
@@ -288,10 +261,5 @@
 
   .runtimeGrid {
     grid-template-columns: 1fr;
-  }
-
-  .modalFieldRow {
-    grid-template-columns: 1fr;
-    gap: 8px;
   }
 }
